@@ -1,5 +1,7 @@
 # network-traffic-visualizer
 
+In this project, you can enter a URL and it will display different stats for the website or URL provided such as bandwidth and packets
+
 ## Project setup
 ```
 npm install

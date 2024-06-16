@@ -15,6 +15,21 @@
 import axios from 'axios';
 
 export default{
-    
-}
+    data() {
+        return {
+            url: '',
+            results: null
+        };
+    },
+    methods: {
+        async scan() {
+            try {
+                const response = await axios.post('/api/scan', { url: this.url });
+                this.results = response.data;
+            } catch (error) {
+                console.error(error);
+            }
+        }
+    }
+};
 </script>
